@@ -1,11 +1,9 @@
 
 
-## Project
+# Project
 
-Ecommerce App with ReactJs & Firebase
-
-# Ecommerce website with Reactjs.
-
+## Ecommerce App with ReactJs & Firebase
+[Click Here to View](https://ridbay-shop.herokuapp.com/)
 # Description:
 An Ecommerce website showing products with Checkout & Payment option.
 
@@ -23,3 +21,7 @@ An Ecommerce website showing products with Checkout & Payment option.
 - Product Listing.
 - Integrated Redux for state management.
 - Payment with Stripe
+
+# Home Page Screenshot
+![Ecommerce App with ReactJs & Firebase!](src/assets/homepage.png "Ecommerce App with ReactJs & Firebase")
+

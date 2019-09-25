@@ -9,5 +9,5 @@ export default function* rootSaga(){
         fetchCollectionsStart), 
         call(userSagas), 
         call(cartSagas),
-    call(shopSagas)]);
+        call(shopSagas)]);
 }

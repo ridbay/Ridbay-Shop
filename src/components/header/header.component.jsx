@@ -3,7 +3,6 @@ import { ReactComponent as Logo } from '../../assets/shopify.svg';
 
 import CardIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown//cart-dropdown.component';
-import { auth } from '../../firebase/firebase.util';
 
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';

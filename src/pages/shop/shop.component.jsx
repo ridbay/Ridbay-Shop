@@ -7,16 +7,14 @@ import {fetchCollectionsStart} from '../../redux/shop/shop.actions';
 
 
 class ShopPage extends React.Component {
-
-
   componentDidMount() {
+    const { fetchCollectionsStart } = this.props;
 
-    const {fetchCollectionsStart} = this.props;
     fetchCollectionsStart();
   }
 
   render() {
-    const { match} = this.props;
+    const { match } = this.props;
 
     return (
       <div className='shop-page'>

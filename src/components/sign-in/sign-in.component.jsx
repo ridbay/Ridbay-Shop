@@ -55,8 +55,8 @@ class SignIn extends React.Component {
                     <div className='buttons'>
                         <CustomButton type='submit'>sign in</CustomButton>
                         <CustomButton 
-                        type='button' 
-                        onClick={googleSignInStart} 
+                        ttype='button'
+                        onClick={googleSignInStart}
                         isGoogleSignIn>
                             sign in with Google
                         </CustomButton>
@@ -70,6 +70,11 @@ class SignIn extends React.Component {
 }
 const mapDispatchToProps = dispatch => ({
     googleSignInStart: () => dispatch(googleSignInStart()),
-    emailSignInStart: (email,password)=> dispatch(emailSignInStart({email, password}))
-})
-export default connect(null, mapDispatchToProps)(SignIn);
+    emailSignInStart: (email, password) =>
+      dispatch(emailSignInStart({ email, password }))
+  });
+  
+  export default connect(
+    null,
+    mapDispatchToProps
+  )(SignIn);

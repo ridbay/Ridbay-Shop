@@ -26,17 +26,18 @@ app.listen(port, error => {
     console.log("server running on port " + port);
 });
 
-app.post('/payment', (req, res)=> {
+app.post('/payment', (req, res) => {
     const body = {
-        source: req.bodytoken.id,
-        amount: req.body.amount,
-        currency: 'usd'
+      source: req.body.token.id,
+      amount: req.body.amount,
+      currency: 'usd'
     };
+  
     stripe.charges.create(body, (stripeErr, stripeRes) => {
-        if(stripeErr) {
-            res.status(500).send({error: stripeErr})
-        } else {
-            res.status(200).send({success: stripeRes});
-        }
-    } )
-})
+      if (stripeErr) {
+        res.status(500).send({ error: stripeErr });
+      } else {
+        res.status(200).send({ success: stripeRes });
+      }
+    });
+  });

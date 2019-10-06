@@ -3,4 +3,20 @@
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
+
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        width: unset;
+        align-items: center;
+
+        > * {
+            padding-left: 5%;
+            padding-right: 5%;
+          }
+        > *:first-child {
+          margin-bottom: 50px;
+        }
+      }
 }
+
